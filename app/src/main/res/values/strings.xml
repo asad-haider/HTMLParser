@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HTML Parser</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="disclamer_string">Disclamer: Exam Result App takes all the results from relevant board authorities or their websites and placed as it is based. We are not responsible for any error in the results.</string>
+    <string name="title_activity_roll_number">Roll Number</string>
+</resources>

@@ -1,0 +1,300 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/mainLayout"
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_background"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/background"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/buttons_background"
+        android:alpha="0.7"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp"
+        android:id="@+id/button_background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Recent\nResult"
+        android:id="@+id/recentResult"
+        android:lines="2"
+        android:maxLines="2"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginBottom="60dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="2dp"
+        android:layout_above="@+id/capformResult"
+        android:layout_alignLeft="@+id/bcomResult"
+        android:layout_alignStart="@+id/bcomResult"
+        android:onClick="buttonOnClick"
+        android:textColor="#12737C" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Matric\nResult"
+        android:id="@+id/matricResult"
+        android:lines="2"
+        android:maxLines="2"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginTop="19dp"
+        android:layout_alignTop="@+id/recentResult"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:onClick="buttonOnClick"
+        android:textColor="#12737C" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Inter\nResult"
+        android:id="@+id/interResult"
+        android:lines="2"
+        android:maxLines="2"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:paddingRight="20dp"
+        android:onClick="buttonOnClick"
+        android:textColor="#12737C"
+        android:layout_alignBottom="@+id/recentResult"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="5sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cap Form\nResult"
+        android:id="@+id/capformResult"
+        android:lines="2"
+        android:maxLines="2"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:paddingLeft="3dp"
+        android:paddingBottom="23dp"
+        android:layout_alignBottom="@+id/button_background"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginBottom="230dp"
+        android:onClick="buttonOnClick"
+        android:textColor="#12737C"
+        android:paddingTop="5sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Diploma\nResult"
+        android:id="@+id/diplomaResult"
+        android:lines="2"
+        android:maxLines="2"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:paddingLeft="0dp"
+        android:paddingBottom="0dp"
+        android:layout_alignBottom="@+id/capformResult"
+        android:layout_alignRight="@+id/matricResult"
+        android:layout_alignEnd="@+id/matricResult"
+        android:onClick="buttonOnClick"
+        android:textColor="#12737C" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="BSC\nResult"
+        android:id="@+id/bscResult"
+        android:lines="2"
+        android:maxLines="2"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:paddingLeft="18dp"
+        android:paddingBottom="25dp"
+        android:layout_below="@+id/recentResult"
+        android:layout_toRightOf="@+id/baResult"
+        android:layout_toEndOf="@+id/baResult"
+        android:onClick="buttonOnClick"
+        android:textColor="#12737C" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="BCOM\nResult"
+        android:id="@+id/bcomResult"
+        android:lines="2"
+        android:maxLines="2"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:paddingLeft="15dp"
+        android:paddingBottom="25dp"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/diplomaResult"
+        android:layout_alignRight="@+id/capformResult"
+        android:layout_alignEnd="@+id/capformResult"
+        android:paddingRight="4dp"
+        android:onClick="buttonOnClick"
+        android:textColor="#12737C" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="BA\nResult"
+        android:id="@+id/baResult"
+        android:lines="2"
+        android:maxLines="2"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:paddingTop="15dp"
+        android:paddingRight="28dp"
+        android:layout_alignBottom="@+id/bcomResult"
+        android:layout_alignLeft="@+id/matricResult"
+        android:layout_alignStart="@+id/matricResult"
+        android:paddingLeft="15dp"
+        android:paddingBottom="10dp"
+        android:onClick="buttonOnClick"
+        android:textColor="#12737C" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Other\nResults"
+        android:id="@+id/otherResult"
+        android:lines="2"
+        android:maxLines="2"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:paddingLeft="0dp"
+        android:paddingBottom="0dp"
+        android:layout_alignTop="@+id/baResult"
+        android:layout_alignLeft="@+id/interResult"
+        android:layout_alignStart="@+id/interResult"
+        android:onClick="buttonOnClick"
+        android:textColor="#12737C" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="20dp"
+        android:background="#5CA2AD"
+        android:id="@+id/linearLayout1"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#61B3C0"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:alpha="0.8"
+        android:onClick="aboutDialog">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_launcher"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ResultsApp"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:paddingLeft="2sp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#61B3C0"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2"
+        android:alpha="0.8">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="News: Blah Blah result has been announced!fasfasfgasgas"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="15sp"
+            android:textColor="#12737C"
+            android:id="@+id/newsTextView"
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disclamer!"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="18sp"
+        android:id="@+id/textView"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="12dp"
+        android:textColor="#ED1C24"
+        android:textStyle="bold"
+        android:onClick="disclamerDialogView" />
+
+</RelativeLayout>
